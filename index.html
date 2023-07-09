@@ -5,33 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="static/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+  <main>
+    <section id="box">
+      <div id="inp_fields">
+        <div class="inp" id="day">
+          <p>Day</p>
+          <input type="text" id="day" name="day" placeholder="DD" size="4">
+        </div>
+        <div class="inp" id="month">
+          <p>Month</p>
+          <input type="text" id="month" name="month" placeholder="MM" size="4">
+        </div>
+        <div class="inp" id="year">
+          <p>Year</p>
+          <input type="text" id="year" name="year" placeholder="YYYY" size="4">
+        </div>
+      </div>
+      <div id="icon">
+        <img src="assets/images/icon-arrow.svg" alt="error-loading-image">
+      </div>
+      <div id="headings">
+        <div id="hyears">
+          <h1 class="dash">--</h1>
+          <h1 class="hd">years</h1>
+        </div>
+        <div id="hmonths">
+          <h1 class="dash">--</h1>
+          <h1 class="hd">months</h1>
+        </div>
+        <div id="hdays">
+          <h1 class="dash">--</h1>
+          <h1 class="hd">days</h1>
+        </div>
+      </div>
+    </section>
+  </main>
   
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>

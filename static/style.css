@@ -1,0 +1,99 @@
+/* Root and Body */
+html{
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+}
+
+
+
+/* Typography */
+
+#inp_fields p{
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+}
+
+#inp_fields input{
+    color: hsl(0, 1%, 44%);
+    font-size: 0.8rem;
+}
+
+.dash{
+    color: purple;
+    margin: 0;
+    padding: 0;
+}
+
+.hd{
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 8%);
+}
+
+/* Main */
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section */
+
+#box{
+    width: 50%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+#inp_fields{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+
+
+#icon{
+    position: relative;
+    left:10em;
+    width: 10%;
+    display: inline-block;
+    background-color: purple;
+    border-radius: 40px;
+}
+
+#day,#month,#year{
+    padding: 0.2em 0;
+}
+
+#icon img{
+    width: 100%;
+    color:white;
+}
+
+#headings{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+#inp_fields,#icons,#headings{
+    margin:0 1em;
+}
+
+
+#hyears,#hmonths,#hdays{
+    display: flex;
+}
+
+/* Footer */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
