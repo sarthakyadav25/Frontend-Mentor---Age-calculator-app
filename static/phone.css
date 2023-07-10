@@ -1,0 +1,22 @@
+Root body
+html{
+    font-size: 32px;
+}
+
+/* Typography */
+
+
+/* Main */
+
+/* Section Box */
+#box{
+    width: 165%;
+}
+
+#input_fields{
+    width: 50%;
+}
+
+#icon{
+    left: 50%;
+}

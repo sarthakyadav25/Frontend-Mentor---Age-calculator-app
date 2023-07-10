@@ -13,32 +13,49 @@ body{
 /* Typography */
 
 #inp_fields p{
-    font-size: 0.5rem;
+    font-size: 0.4rem;
     text-transform: uppercase;
     color: hsl(0, 1%, 44%);
+    font-weight: 700;
+    margin: 0;
 }
 
 #inp_fields input{
-    color: hsl(0, 1%, 44%);
+    color: hsl(0, 0%, 8%);
     font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 0.4em;
+    padding: 0.3em 0.5em;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 86%);
+    cursor: pointer;
+    transition: border 0.4s;
+}
+
+#inp_fields input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
 }
 
 .dash{
-    color: purple;
+    color: hsl(259, 100%, 65%);
     margin: 0;
     padding: 0;
+    font-weight: 800;
+    font-style: italic;
 }
 
 .hd{
     margin: 0;
     padding: 0;
     color: hsl(0, 0%, 8%);
+    font-weight: 800;
+    font-style: italic;
 }
 
 /* Main */
 main{
     height: 100vh;
-    width: 100vw;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,45 +64,56 @@ main{
 /* Section */
 
 #box{
-    width: 50%;
+    width: 40%;
     background-color: white;
-    border-radius: 2px;
+    border-radius: 4% 4% 25% 4%;
 }
 
 #inp_fields{
     display: flex;
-    width: 80%;
+    width: 68%;
     justify-content: space-between;
+    margin-top: 1em;
 
 }
 
+#icon img{
+    width: 100%;
+    color: hsl(0, 0%, 94%);
+}
 
 #icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    left:10em;
-    width: 10%;
-    display: inline-block;
-    background-color: purple;
-    border-radius: 40px;
+    left: 82%;
+    width: 5%;
+    padding: 0.5em 0.5em;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+#icon:hover{
+    background-color:hsl(0, 0%, 8%);
 }
 
 #day,#month,#year{
     padding: 0.2em 0;
 }
 
-#icon img{
-    width: 100%;
-    color:white;
-}
 
 #headings{
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
+    margin-bottom: 1em;
 }
 
 #inp_fields,#icons,#headings{
-    margin:0 1em;
+    margin-left: 1.5em;
 }
 
 
