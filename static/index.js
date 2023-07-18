@@ -71,20 +71,17 @@ button.addEventListener("click",()=>{
             let leftyear = curyear - birthyear
             let leftmonth = curmonth - birthmonth
             let leftday = curday - birthday
+
+            if(leftday < 0){
+                leftmonth -= 1;
+            }
             if(leftmonth < 0){
-                leftyear -= 1
+                leftyear -= 1;
             }
-            leftmonth += 12;
-            if(leftday > 0){
-                leftmonth += 1;
-            }
-            else{
-                leftday *= -1;
-            }
-            if (leftmonth > 12 ){
-                leftmonth = 0;
-            }
-            birthday += leftday;
+            
+            leftmonth = (12 + leftmonth) % 12
+            leftday = (30 + leftday) % 30
+
             dasharr[0].innerText = leftyear;
             dasharr[1].innerText = leftmonth;
             dasharr[2].innerText = leftday;
